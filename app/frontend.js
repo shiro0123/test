@@ -1,14 +1,12 @@
 import p5 from "p5";
 
 // ボタンを押した時の動作
-document.getElementById("button").addEventListener("click", () => {
-  fetch("/api/hello", {
+document.getElementById("button").addEventListener("click", async () => {
+  const response = await fetch("/api/hello", {
     method: "POST",
-  })
-    .then((response) => response.text())
-    .then((text) => {
-      document.getElementById("hello").textContent = text;
-    });
+  });
+  const text = await response.text();
+  document.getElementById("hello").textContent = text;
 });
 
 // p5.jsのスケッチ
