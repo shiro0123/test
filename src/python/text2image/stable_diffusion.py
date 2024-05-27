@@ -13,7 +13,7 @@ response = requests.post(
     data={
         "prompt": "a cat on a skateboard",  # SDでは英語である必要がある
         "output_format": "jpeg",
-        "model": "sd3-turbo",  # sd3 or sd3-turbo turboは高速で低価格
+        "model": "sd3",  # sd3 or sd3-turbo turboは高速で低価格
         "aspect_ratio": "1:1",  # 16:9 1:1 21:9 2:3 3:2 4:5 5:4 9:16 9:21
     },
 )
