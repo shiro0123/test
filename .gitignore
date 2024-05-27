@@ -1,4 +1,5 @@
 .envrc
 .DS_Store
 /node_modules/
-answer/
+/answer/
+/app/public/bundle.js
