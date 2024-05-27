@@ -14,6 +14,8 @@ const fetchGPT = async (prompt) => {
     temperature: 0.5, // 0.0-1.0
   });
 
+  console.log(completion.choices[0].message.content);
+
   return completion.choices[0].message.content;
 };
 
