@@ -101,5 +101,9 @@ HTML/CSS/JavaScript で構成された簡単な Web アプリケーションの�
 サンプルの実行は、この`readme`が存在するフォルダを最上位層として VSCode を開き、以下のコマンドを実行してください。
 
 ```bash
-npm run serve
+npm run start
 ```
+
+[localhost:4000](http://localhost:4000)にアクセスすると、Web アプリケーションが表示されます。
+
+HTML ファイルや CSS ファイル、JavaScript ファイルを変更した場合は自動でリロードされます。
