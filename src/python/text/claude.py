@@ -9,7 +9,7 @@ model = "claude-3-haiku-20240307"
 
 message = client.messages.create(
     model=model,
-    max_tokens=1000,  # 出力上限（4096まで）
+    max_tokens=1000,  # 出力上限
     temperature=0.0,  # 0.0-1.0
     system="",  # 必要ならシステムプロンプトを設定
     messages=[

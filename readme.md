@@ -61,3 +61,26 @@ Python のライブラリをインストールします。
 ```bash
 pip install -r requirements.txt
 ```
+
+Node.js のライブラリをインストールします。
+
+```bash
+npm install
+```
+
+### 実行
+
+このテスト環境では code runner を使うことを推奨します。
+コマンドで実行する場合は以下のコマンドを実行してください。
+
+python
+
+```bash
+python ./path/to/file.py
+```
+
+node.js
+
+```bash
+node ./path/to/file.js
+```
