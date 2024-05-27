@@ -1,4 +1,4 @@
-# ShibaLab 合宿 2024 - AI を使おう講座
+# ShibaLab 合宿 2024 - AI を使おう講座 SAMPLES
 
 ## はじめに - 全体で必要なもの
 
@@ -68,10 +68,18 @@ Node.js のライブラリをインストールします。
 npm install
 ```
 
-### 実行
+### API 　サンプルの実行
+
+API サンプルは Python, JavaScript, processing の 3 種類を用意しています。
+全てのサンプルは`sample`フォルダに格納されています。
+
+サンプルにある LLM は、`ChatGPT`, `Claude`, `Gemini`の 3 種類です。
+また、画像生成 AI として `DALL-E`および`Stable Diffusion`のサンプルも格納されています。
 
 このテスト環境では code runner を使うことを推奨します。
-コマンドで実行する場合は以下のコマンドを実行してください。
+この`readme`が存在するフォルダを最上位層として VSCode を開き、Code Runner を使って実行してください。
+
+特別な理由でコマンドで実行する場合は以下のコマンドを実行してください。
 
 python
 
@@ -83,4 +91,15 @@ node.js
 
 ```bash
 node ./path/to/file.js
+```
+
+### web app サンプルの実行
+
+HTML/CSS/JavaScript で構成された簡単な Web アプリケーションのサンプルも用意しています。
+ソースコードは`app`フォルダ内に格納されています。
+
+サンプルの実行は、この`readme`が存在するフォルダを最上位層として VSCode を開き、以下のコマンドを実行してください。
+
+```bash
+npm run serve
 ```
