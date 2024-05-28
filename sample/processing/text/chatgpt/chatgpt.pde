@@ -1,9 +1,11 @@
 // ライブラリからhttp.requestsをインストールする必要あり
+// 日本語がうまく処理されない
+import http.requests.*;
+import java.nio.charset.StandardCharsets;
+
 Thread asyncThread;
 String API_KEY;
 String text;
-import http.requests.*;
-import java.nio.charset.StandardCharsets;
 
 void setup() {
   API_KEY = System.getenv("OPENAI_API_KEY");
@@ -28,6 +30,7 @@ void setup() {
 }
 
 void draw() {
+  background(255);
   text(text, 10, height / 2); // 表示するテキスト, x座標, y座標
 }
 
