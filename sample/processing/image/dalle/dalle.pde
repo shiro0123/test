@@ -1,5 +1,4 @@
 import http.requests.*;
-import java.nio.charset.StandardCharsets;
 
 // ライブラリからhttp.requestsをインストールする必要あり
 Thread asyncThread;
@@ -20,7 +19,7 @@ void setup() {
   // スレッドを開始
   asyncThread.start();
   
-  size(800, 512);
+  size(512, 512);
   fill(0);
   textSize(16);
   PFont font = createFont("Meiryo", 50);
@@ -43,7 +42,7 @@ void fetchDalle() {
   String url = "https://api.openai.com/v1/images/generations";
   // リクエストボディを作成
   JSONObject requestBody = new JSONObject();
-  requestBody.setString("model", "dall-e-2");
+  requestBody.setString("model", "dall-e-3");
   requestBody.setString("prompt", "a white siamese cat");
   requestBody.setInt("n", 1);
   requestBody.setString("size", "1024x1024");
