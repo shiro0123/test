@@ -3,6 +3,7 @@ import anthropic
 
 client = anthropic.Anthropic()
 
+
 # 画像をbase64にエンコードする
 def get_base64_encoded_image(image_path: str) -> str:
     with open(image_path, "rb") as image_file:
@@ -11,7 +12,8 @@ def get_base64_encoded_image(image_path: str) -> str:
         base64_string = base_64_encoded_data.decode("utf-8")
         return base64_string
 
-image_path = "./assets/techshiba.jpg"
+
+image_path = "./assets/cat2.jpg"
 
 message = client.messages.create(
     model="claude-3-opus-20240229",

@@ -17,7 +17,7 @@ def get_base64_encoded_image(image_path: str) -> str:
 # gpt-3.5-turbo, gpt-4, gpt-4oから選択
 model_name = "gpt-4o"
 
-image_path = "./assets/techshiba.jpg"
+image_path = "./assets/cat2.jpg"
 
 completion = client.chat.completions.create(
     model=model_name,
@@ -28,7 +28,7 @@ completion = client.chat.completions.create(
             "content": [
                 {
                     "type": "text",
-                    "text": "写っているキャラクターについて教えてください。",
+                    "text": "画像の状況を教えてください。",
                 },
                 {
                     "type": "image_url",
