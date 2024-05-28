@@ -4,6 +4,8 @@
     "ms-python.python",
     "ms-python.black-formatter",
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "millenniumambiguity.processing-formatter",
+    "tobiah.language-pde"
   ]
 }
