@@ -40,13 +40,13 @@ void fetchGPT() {
   // 最初のメッセージオブジェクトを作成
   JSONObject message1 = new JSONObject();
   message1.setString("role", "system");
-  message1.setString("content", "必ず英語で答えてください。");
+  message1.setString("content", "answer in english.");
   messages.append(message1);
   
   // 二つ目のメッセージオブジェクトを作成
   JSONObject message2 = new JSONObject();
   message2.setString("role", "user");
-  message2.setString("content", "こんにちは!");
+  message2.setString("content", "Hello! Please tell me about the history of Japan.");
   messages.append(message2);
   
   // リクエストボディを作成
