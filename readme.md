@@ -11,6 +11,7 @@ WSL Ubuntu + bash
 ```bash
 sudo apt install direnv
 sudo echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### .envrc の設定
@@ -44,6 +45,7 @@ asdf, mise, anyenv などのバージョン管理ツールを使うと、複数�
 ```bash
 curl https://mise.run | sh
 echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### Python、Node.js のインストール

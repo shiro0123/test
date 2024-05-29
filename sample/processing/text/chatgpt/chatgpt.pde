@@ -1,5 +1,5 @@
 // ライブラリからhttp.requestsをインストールする必要あり
-// 日本語がうまく処理されない
+// 日本語リクエストがうまく処理されない
 import http.requests.*;
 import java.nio.charset.StandardCharsets;
 
@@ -40,7 +40,7 @@ void fetchGPT() {
   // 最初のメッセージオブジェクトを作成
   JSONObject message1 = new JSONObject();
   message1.setString("role", "system");
-  message1.setString("content", "answer in english.");
+  message1.setString("content", "answer in Japanese.");
   messages.append(message1);
   
   // 二つ目のメッセージオブジェクトを作成
