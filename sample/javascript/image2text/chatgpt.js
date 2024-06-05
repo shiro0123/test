@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import fs from "node:fs";
 
-const main = async () => {
+async function main() {
   const client = new OpenAI(process.env.OPENAI_API_KEY);
 
   const imagePath = "./assets/techshiba.jpg";
@@ -34,6 +34,6 @@ const main = async () => {
   });
 
   console.log(completion.choices[0].message.content);
-};
+}
 
 main();

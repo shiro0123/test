@@ -10,7 +10,7 @@ document.getElementById("button").addEventListener("click", async () => {
 });
 
 // p5.jsのスケッチ
-const sketch = (p) => {
+function sketch(p) {
   // 最初に1回だけ実行される
   p.setup = () => {
     p.createCanvas(window.innerWidth, window.innerHeight);
@@ -23,6 +23,6 @@ const sketch = (p) => {
     p.fill(196, 196, 255);
     p.ellipse(p.mouseX, p.mouseY, 50, 50);
   };
-};
+}
 
 new p5(sketch, "p5canvas");

@@ -4,7 +4,7 @@ import fs from "node:fs";
 // WhisperはLLMではなく、文字起こしAI
 // 低価格で高精度なので、ChatGPTやClaudeなどのAIと組み合わせて使うと良い
 
-const main = async () => {
+async function main() {
   const client = new OpenAI(process.env.OPENAI_API_KEY);
 
   const audioPath = "./assets/midori.mp3";
@@ -16,6 +16,6 @@ const main = async () => {
   });
 
   console.log(completion.text);
-};
+}
 
 main();

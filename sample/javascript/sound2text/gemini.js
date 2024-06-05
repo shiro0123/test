@@ -25,7 +25,7 @@ function fileToGenerativePart(path, mimeType) {
   };
 }
 
-const main = async () => {
+async function main() {
   const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
@@ -36,5 +36,5 @@ const main = async () => {
   const result = await model.generateContent([prompt, ...blobParts]);
 
   console.log(result.response.text());
-};
+}
 main();

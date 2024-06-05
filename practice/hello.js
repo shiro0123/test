@@ -1,5 +1,5 @@
-const main = async () => {
+async function main() {
   console.log("Hello, world!");
-};
+}
 
 main();

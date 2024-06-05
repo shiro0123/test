@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-const main = async () => {
+async function main() {
   const client = new OpenAI(process.env.OPENAI_API_KEY);
 
   const prompt = "芝浦工業大学熱海セミナーハウス";
@@ -14,6 +14,6 @@ const main = async () => {
   });
 
   console.log(result.data[0].url);
-};
+}
 
 main();

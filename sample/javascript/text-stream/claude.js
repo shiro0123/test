@@ -4,7 +4,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const main = async () => {
+async function main() {
   const stream = await anthropic.messages
     .stream({
       max_tokens: 1024,
@@ -22,6 +22,6 @@ const main = async () => {
 
   const message = await stream.finalMessage();
   console.log(message);
-};
+}
 
 main();

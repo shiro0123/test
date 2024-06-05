@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-const fetchGPT = async (prompt) => {
+async function fetchGPT(prompt) {
   const client = new OpenAI(process.env.OPENAI_API_KEY);
 
   const completion = await client.chat.completions.create({
@@ -17,10 +17,10 @@ const fetchGPT = async (prompt) => {
   console.log(completion.choices[0].message.content);
 
   return completion.choices[0].message.content;
-};
+}
 
-const main = async () => {
+async function main() {
   console.log("Hello, world!");
-};
+}
 
 main();

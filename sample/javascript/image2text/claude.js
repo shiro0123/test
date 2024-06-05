@@ -5,7 +5,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const main = async () => {
+async function main() {
   const imagePath = "./assets/techshiba.jpg";
   const imageBuffer = fs.readFileSync(imagePath);
   const base64Image = imageBuffer.toString("base64");
@@ -36,6 +36,6 @@ const main = async () => {
   });
 
   console.log(message.content[0].text);
-};
+}
 
 main();

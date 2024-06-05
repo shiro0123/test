@@ -20,7 +20,7 @@
     <script type="text/javascript">
       const API_KEY = "MY_API_KEY";
       const button = document.getElementById("submit");
-      button.addEventListener("click", async () => {
+      button.addEventListener("click", async function () {
         button.disabled = true;
         const prompt = document.getElementById("prompt").value;
         const file = document.getElementById("file").files[0];

@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-const main = async () => {
+async function main() {
   const client = new OpenAI(process.env.OPENAI_API_KEY);
 
   const prompt = "こんにちは、芝浦工業大学ShibaLabについて教えてください。";
@@ -16,6 +16,6 @@ const main = async () => {
   });
 
   console.log(completion.choices[0].message.content);
-};
+}
 
 main();
