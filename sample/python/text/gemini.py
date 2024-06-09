@@ -18,6 +18,12 @@ config = {
     "max_output_tokens": 512,  # 最大出力トークン数を指定`
 }
 
-model = genai.GenerativeModel(model_name, generation_config=config)
+model = genai.GenerativeModel(
+    model_name,
+    generation_config=config,
+    system_instruction=[  # System
+        "Use Japanese for response.",
+    ],
+)
 response = model.generate_content(prompt)
 print(response.text)
