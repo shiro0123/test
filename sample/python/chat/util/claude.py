@@ -8,7 +8,7 @@ model = "claude-3-haiku-20240307"
 def get_response(input: str, history: list[mel.ChatMessage]):
 
     messages = [{"role": "system", "content": "必ず日本語で回答してください。"}]
-    for message in history:
+    for message in history[:8]:  # API使用量削減のため、過去8つのメッセージのみを使用
         messages.append(
             {
                 "role": "user" if message.role == "user" else "assistant",
