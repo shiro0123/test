@@ -98,13 +98,13 @@ Gemini NanoはChrome126以降で使用可能
     <script type="text/javascript">
       // チャットを開始した時の処理
       const chat = async () => {
-        const canCreate = await window.ai.canCreateTextSession();
+        const canCreate = await window.ai?.canCreateTextSession();
         // canCreate の値は以下のいずれかになる：
         // * "readily": モデルはデバイス上で利用可能であり、返答速度が速い
         // * "after-download": モデルはデバイス上で利用不可能ですが、デバイスには能力があるため、セッションの作成はダウンロードプロセスを開始し、時間がかかる可能性がある
         // * "no": そのデバイスではこのモデルは利用できない
 
-        if (canCreate !== "no") {
+        if (canCreate === "readily" || canCreate === "after-download") {
           const session = await window.ai.createTextSession();
 
           const input = document.getElementById("input").value;
@@ -119,7 +119,6 @@ Gemini NanoはChrome126以降で使用可能
           }
 
           // セッション終了後
-          stream.close();
           document.getElementById("input").disabled = false;
           document.getElementById("input").focus();
         } else {
