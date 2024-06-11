@@ -1,3 +1,14 @@
+<!-- 
+Gemini NanoはChrome126以降で使用可能
+1. chrome://flagsを開き、以下を設定
+  - Enables optimization guide on device: Enabled BypassPerfRequirement
+  - Prompt API for Gemini Nano: Enabled
+2. chrome://components/にアクセスし、Optimization Guide On Device Modelのアップデート状況を確認。
+  表示されない場合はダウンロードが必要なので一旦window.aiを呼び出す必要がある。
+3. 以下のコードを実行すると、Gemini Nanoが起動する。
+
+日本語記事: https://zenn.dev/the_exile/articles/chrome-gemini-nano
+-->
 <!DOCTYPE html>
 <html lang="ja">
   <head>
