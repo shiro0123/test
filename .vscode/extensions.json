@@ -6,6 +6,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "millenniumambiguity.processing-formatter",
-    "tobiah.language-pde"
+    "tobiah.language-pde",
+    "ms-vscode-remote.remote-wsl"
   ]
 }
