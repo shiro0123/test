@@ -4,8 +4,9 @@ client = anthropic.Anthropic()
 
 # モデルの選択
 # claude-3-opus-20240229, claude-3-sonnet-20240229, claude-3-haiku-20240307
+# claude-3-5-sonnet-20240620
 
-model = "claude-3-haiku-20240307"
+model = "claude-3-5-sonnet-20240620"
 
 message = client.messages.create(
     model=model,
