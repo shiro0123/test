@@ -24,5 +24,6 @@ app.listen(port, () => {
 // ---------------
 
 app.post("/api/hello", async (req, res) => {
-  res.send("こんにちは! 現在時刻は" + new Date().toLocaleString() + "です!");
+  const now = new Date().toLocaleString();
+  res.send("こんにちは! 現在時刻は" + now + "です!");
 });
